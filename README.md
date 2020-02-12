@@ -16,6 +16,8 @@ Widget build(BuildContext context) {
   );
 }
 ```
+![without headers](https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/without%20headers.jpg)
+
 ## Step 2
 Add Row Widget as children for header customization.
 ```xml
@@ -230,7 +232,7 @@ Expanded(
 
 > addPostFrameCallback will be called after the widget build() is completed.
  
- 
+![custom headers](https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/customized%20header.jpg)
 
 
 
