@@ -16,7 +16,7 @@ Widget build(BuildContext context) {
   );
 }
 ```
-<img alt="without headers"  src="https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/without%20headers.jpg" width="350" height="500" />|
+<img alt="without headers"  src="https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/without%20headers.jpg" width="350" height="600" />|
 
 ## Step 2
 Add Row Widget as children for header customization.
@@ -234,7 +234,7 @@ Expanded(
 
 **[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/10997/how-to-add-custom-header-and-view-header-in-flutter-event-calendar-sfcalendar-widget)**
  
-<img alt="custom headers"  src="https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/customized%20header.jpg" width="350" height="500" />|
+<img alt="custom headers"  src="https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/customized%20header.jpg" width="350" height="600" />|
 
 
 
