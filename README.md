@@ -231,6 +231,8 @@ Expanded(
 ```
 
 > addPostFrameCallback will be called after the widget build() is completed.
+
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/10997/how-to-add-custom-header-and-view-header-in-flutter-event-calendar-sfcalendar-widget)**
  
 ![custom headers](https://github.com/SyncfusionExamples/header-customization-calendar-flutter/blob/master/Screenshots/customized%20header.jpg)
 
