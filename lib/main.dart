@@ -24,7 +24,7 @@ class MyApp extends StatefulWidget {
 }
 
 class ScheduleExample extends State<MyApp> {
-  CalendarView  _calendarView = CalendarView.week;
+  final CalendarController _controller=CalendarController();
   String? _headerText, _viewHeaderText, _viewHeaderText1, _viewHeaderText2, _viewHeaderText3, _viewHeaderText4, _viewHeaderText5,
       _viewHeaderText6, _dateText, _dateText1, _dateText2, _dateText3, _dateText4, _dateText5, _dateText6;
   String? date;
@@ -204,12 +204,12 @@ class ScheduleExample extends State<MyApp> {
             ),
             Expanded(
                 child: SfCalendar(
-                  //backgroundColor: Colors.red,
                   headerHeight: 0,
                   viewHeaderHeight: 0,
-                  view: _calendarView,
+                  controller: _controller,
+                  view: CalendarView.week,
                   onViewChanged: (ViewChangedDetails viewChangedDetails) {
-                    if (_calendarView == CalendarView.week) {
+                    if (_controller.view == CalendarView.week) {
                       _headerText = DateFormat('MMMM yyyy')
                           .format(viewChangedDetails
                           .visibleDates[viewChangedDetails.visibleDates.length ~/ 2])
