@@ -4,6 +4,8 @@ A quick-start example to help you to customize the agenda item height in the Flu
 
 You can customise the header and view header in the Flutter Event Calendar by hiding headers and placing flutter Container, Row, and Column widgets.
 
+![customheader](https://user-images.githubusercontent.com/46158936/209670899-693a2607-5a04-463e-9eb8-86d8817588bb.jpeg)
+
 For more details, refer to our [KB](https://www.syncfusion.com/kb/10997/how-to-add-custom-header-and-view-header-in-the-flutter-calendar) documentation.
 
 ## Requirements to run the demo
