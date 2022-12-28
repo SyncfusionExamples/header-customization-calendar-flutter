@@ -1,17 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(CustomHeaders());
+void main() => runApp(const CustomHeaders());
 
 class CustomHeaders extends StatelessWidget {
+  const CustomHeaders({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyApp(),
     );
@@ -19,6 +18,8 @@ class CustomHeaders extends StatelessWidget {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   State<StatefulWidget> createState() => ScheduleExample();
 }
@@ -59,147 +60,147 @@ class ScheduleExample extends State<MyApp> {
     width = MediaQuery.of(context).size.width;
     cellWidth = width! / 8;
     return  Scaffold(
-        body: Padding(padding: EdgeInsets.fromLTRB(0, 30, 0, 0),child:
+        body: Padding(padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),child:
         Column(
           children: <Widget>[
             Container(
-              color: Color(0xFF381460),
+              color: const Color(0xFF381460),
               width: width,
               height: 40,
               child: Text(_headerText!,
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 25, color: Colors.white)),
+                  style: const TextStyle(fontSize: 25, color: Colors.white)),
             ),
             Row(
               children: <Widget>[
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(''),
+                  child: const Text(''),
                 ),
                 Container(
-                    color: Color(0xFFa278b5),
+                    color: const Color(0xFFa278b5),
                     width: cellWidth,
                     child: Text(_viewHeaderText!, textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white))),
+                        style: const TextStyle(color: Colors.white))),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText1!, textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText1!, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText2!, textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText2!, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText3!, textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText3!, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText4!, textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText4!, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText5!, textAlign: TextAlign.center,style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText5!, textAlign: TextAlign.center,style: const TextStyle(color: Colors.white)),
                 ),
                 Container(
-                  color: Color(0xFFa278b5),
+                  color: const Color(0xFFa278b5),
                   width: cellWidth,
-                  child: Text(_viewHeaderText6!, textAlign: TextAlign.center,style: TextStyle(color: Colors.white)),
+                  child: Text(_viewHeaderText6!, textAlign: TextAlign.center,style: const TextStyle(color: Colors.white)),
                 ),
               ],
             ),
             Row(
               children: <Widget>[
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
-                  child: Text(""),
+                  child: const Text(""),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(
                     _dateText!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(
                     _dateText1!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(
                     _dateText2!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(
                     _dateText3!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(
                     _dateText4!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(_dateText5!,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25)),
+                      style: const TextStyle(fontSize: 25)),
                 ),
                 Container(
-                  color: Color(0xFFf6c3e5),
+                  color: const Color(0xFFf6c3e5),
                   width: cellWidth,
                   height: 30,
                   child: Text(_dateText6!,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25)),
+                      style: const TextStyle(fontSize: 25)),
                 ),
               ],
             ),
             Row(
               children: <Widget>[
-                Container(color: Color(0xFFffbdff0),width: cellWidth,height: 24, child: Text('')),
-                Container(color: Color(0xFFffbdff0),width: cellWidth, child: icon1),
-                Container(color: Color(0xFFffbdff0),width: cellWidth,  child: icon2),
-                Container(color: Color(0xFFffbdff0),width: cellWidth, child: icon3),
-                Container(color: Color(0xFFffbdff0),width: cellWidth,  child: icon4),
-                Container(color: Color(0xFFffbdff0),width: cellWidth,  child: icon5),
-                Container(color: Color(0xFFffbdff0),width: cellWidth,  child: icon6),
-                Container(color: Color(0xFFffbdff0),width: cellWidth, child: icon7),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth,height: 24, child: const Text('')),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth, child: icon1),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth,  child: icon2),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth, child: icon3),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth,  child: icon4),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth,  child: icon5),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth,  child: icon6),
+                Container(color: const Color(0xFFffbdff0),width: cellWidth, child: icon7),
               ],
             ),
             Expanded(
@@ -258,134 +259,134 @@ class ScheduleExample extends State<MyApp> {
                           .toString();
                     }
                     if (viewChangedDetails.visibleDates[viewChangedDetails.visibleDates.length~/2].day % 2 == 0) {
-                      icon1 = Icon(
+                      icon1 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
-                      icon2 = Icon(
+                      icon2 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon3 = Icon(
+                      icon3 = const Icon(
                         Icons.wb_incandescent,
                         color: Color(0xFF0ba0000),
                       );
-                      icon4 = Icon(
+                      icon4 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
-                      icon5 = Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
-                      icon6 = Icon(
+                      icon5 = const Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
+                      icon6 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon7 = Icon(
+                      icon7 = const Icon(
                         Icons.wb_incandescent,
                         color: Color(0xFF0ba0000),
                       );
                     } else if (viewChangedDetails.visibleDates[viewChangedDetails.visibleDates.length~/2].day % 5 == 0) {
-                      icon1 = Icon(
+                      icon1 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon2 = Icon(
+                      icon2 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
-                      icon3 = Icon(
+                      icon3 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon4 = Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
-                      icon5 = Icon(
+                      icon4 = const Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
+                      icon5 = const Icon(
                         Icons.wb_incandescent,
                         color: Color(0xFF0ba0000),
                       );
-                      icon6 = Icon(
+                      icon6 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
-                      icon7 = Icon(
+                      icon7 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
                     } else if (viewChangedDetails.visibleDates[viewChangedDetails.visibleDates.length~/2].day % 4 == 0) {
-                      icon1 = Icon(
+                      icon1 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
-                      icon2 = Icon(Icons.wb_incandescent);
-                      icon3 = Icon(
+                      icon2 = const Icon(Icons.wb_incandescent);
+                      icon3 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
-                      icon4 = Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
-                      icon5 = Icon(
+                      icon4 = const Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
+                      icon5 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.yellow,
                       );
-                      icon6 = Icon(
+                      icon6 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
-                      icon7 = Icon(
+                      icon7 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.yellow,
                       );
                     } else if (viewChangedDetails.visibleDates[viewChangedDetails.visibleDates.length~/2].day % 3 == 0) {
-                      icon1 = Icon(
+                      icon1 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.yellow,
                       );
-                      icon2 = Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
-                      icon3 = Icon(
+                      icon2 = const Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
+                      icon3 = const Icon(
                         Icons.wb_incandescent,
                         color: Color(0xFF0ba0000),
                       );
-                      icon4 = Icon(
+                      icon4 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon5 = Icon(
+                      icon5 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
-                      icon6 = Icon(
+                      icon6 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
-                      icon7 = Icon(
+                      icon7 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
                     } else {
-                      icon1 = Icon(
+                      icon1 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon2 = Icon(
+                      icon2 = const Icon(
                         Icons.wb_iridescent,
                         color: Color(0xFF0253e35),
                       );
-                      icon3 = Icon(
+                      icon3 = const Icon(
                         Icons.wb_sunny,
                         color: Colors.amber,
                       );
-                      icon4 = Icon(
+                      icon4 = const Icon(
                         Icons.wb_cloudy,
                         color: Colors.grey,
                       );
-                      icon5 = Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
-                      icon6 = Icon(
+                      icon5 = const Icon(Icons.wb_iridescent, color: Color(0xFF0253e35));
+                      icon6 = const Icon(
                         Icons.wb_incandescent,
                         color: Color(0xFF0ba0000),
                       );
-                      icon7 = Icon(
+                      icon7 = const Icon(
                         Icons.wb_auto,
                         color: Colors.orange,
                       );
                     }
-                    SchedulerBinding.instance!.addPostFrameCallback((duration) {
+                    SchedulerBinding.instance.addPostFrameCallback((duration) {
                       setState(() {});
                     });
                   },
